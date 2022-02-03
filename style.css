@@ -1,0 +1,29 @@
+/*!
+Theme Name: buson
+Theme URI: http://underscores.me/
+Author: Md Roman Biswas
+Author URI: http://thezero
+Description: thezero
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: buson
+Tags: buson, website
+*/
+.post_item img {
+    width: 80px;
+    height: 80px;
+}
+img.attachment-thumbnail.size-thumbnail.wp-post-image {
+    width: 60px;
+    height: 60px;
+}
+.comments-area .thumb img {
+    height: 76px;
+}
+
+.comments-area .children {
+    margin-left: 30px;
+}
