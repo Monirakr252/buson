@@ -9,7 +9,12 @@
         foreach ($categories as $category):
         ?>
         <li>
-            <a href="<?php echo $category->slug ?>" class="d-flex">
+            <?php
+            $site_url = site_url();
+            $category_path = "/category/";
+            $category_url = $category->slug;
+            ?>
+            <a href="<?php echo $site_url.$category_path.$category_url ?>" class="d-flex">
                 <p><?php echo $category->name ?></p>
                 <p><?php echo " (". $category->category_count .")" ?></p>
             </a>
