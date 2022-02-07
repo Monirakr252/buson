@@ -65,7 +65,10 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-1 col-md-1">
                                 <div class="logo">
-                                  <a href="<?php echo get_site_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?> /assets/img/logo/logo.png" alt=""></a>
+                                <?php
+                                $site_logo = get_field('site_logo', 'option');
+                                ?>
+                                  <a href="<?php echo get_site_url(); ?>"><img src="<?php echo $site_logo['url'] ?>" alt="<?php echo $site_logo['title'] ?>"></a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10 col-md-10">
