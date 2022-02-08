@@ -27,3 +27,7 @@ img.attachment-thumbnail.size-thumbnail.wp-post-image {
 .comments-area .children {
     margin-left: 30px;
 }
+.single-post-area .blog_details {
+    box-shadow: 0 0 1px 0;
+    padding: 10px;
+}

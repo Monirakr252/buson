@@ -2,6 +2,7 @@
     <h3 class="widget_title">Recent Post</h3>
     <?php 
     $args = array(
+        'order' => 'ASC',
         'post_type' => 'post',
         'posts_per_page' => 4,
     );
@@ -10,7 +11,7 @@
         $query->the_post();
     ?>
     <div class="media post_item">
-        <img src="<?php the_post_thumbnail_url(80 * 80); ?>" alt="post">
+        <img src="<?php the_post_thumbnail_url(); ?>" alt="post">
         <div class="media-body">
             <a href="<?php the_permalink(); ?>">
                 <h3><?php the_title(); ?></h3>

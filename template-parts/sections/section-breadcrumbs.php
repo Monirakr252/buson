@@ -5,7 +5,17 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="hero-cap text-center">
-                        <h2><?php single_post_title(); ?></h2>
+                        <h2>
+                            <?php
+                            $single_title = single_post_title();
+                            $single_acrhive = single_cat_title();
+                            if(is_archive()){
+                                 echo $single_acrhive;
+                                }else{
+                                    echo $single_title;
+                                }
+                            ?>
+                        </h2>
                     </div>
                 </div>
             </div>

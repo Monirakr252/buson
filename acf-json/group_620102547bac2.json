@@ -15,8 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "center_lat": "",
-            "center_lng": "",
+            "center_lat": "24.0129",
+            "center_lng": "89.2591",
             "zoom": "",
             "height": ""
         }
@@ -24,9 +24,9 @@
     "location": [
         [
             {
-                "param": "post_type",
+                "param": "options_page",
                 "operator": "==",
-                "value": "post"
+                "value": "theme-general-settings"
             }
         ]
     ],
@@ -38,5 +38,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1644233324
+    "modified": 1644306799
 }

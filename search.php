@@ -19,17 +19,16 @@
 
                 <div class="single-post mb-3 ">
                     <div class="blog_details">
-                        <div class="row">
+                        <div href="<?php the_permalink(); ?>" class="row">
                             <div class="col-8">
                             <h2><?php the_title(); ?></h2>
-                        <ul class="blog-info-link mt-3 mb-4">
-                        <li><i class="fa fa-user"></i>
-                        <?php the_category(', '); ?>
-                        </li>
-                        <li><a href="#"><i class="fa fa-comments"></i><?php $comment_count = get_comments_number($post->ID);
-                        echo $comment_count .($comment_count === '0' ? ' comment' : ' comments'); ?></a></li>
-                        </ul>
-                            </div>
+                            <?php $excerpt = get_the_excerpt();
+                            $excerpt = substr( $excerpt, 0, 150 ); // Only display first 260 characters of excerpt
+                            $result = substr( $excerpt, 0, strrpos( $excerpt, ' ' ) );
+                            ?>
+                            <p><?php echo $result."..."; ?></p>
+                        
+                        </div>
                             <div class="col-4">
                             <img class="img-fluid" src="<?php the_post_thumbnail_url(); ?>" alt="">
                             </div>
